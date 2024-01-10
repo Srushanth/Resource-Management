@@ -1,5 +1,10 @@
 terraform {
-    cloud { organization = "srushanthbaride" workspaces { name = "example-workspace" } } 
+  backend "remote" {
+    organization = "Sruyani"
+    workspaces {
+      name = "Resource-Management"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
